@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<link rel="stylesheet" href="Survey_Form.css">
+<head> 
+<h1 id="title">Sahaba Clothing</h1>
+<p id="description">What new products would you like to see from us?</p>
+</head>
+<body>
+  <form id="survey-form">
+   <label id="name-label">
+    Name <input id="name" type="text" placeholder="Enter your name" required/>
+   </label>
+   <label id="email-label">
+    Email <input id="email" type="email" placeholder="Enter your email" required/>
+   </label>
+   <label id="number-label">
+    Age (optional) <input id="number" type="number" min="10" max="120" placeholder="Age"/>
+   <label for="product">What new products would you like to see from us?
+   <select id="dropdown">
+     <option selected disabled>Select an option</opion>
+     <option id="product" value="emirati-thobes">Emirati Thobes</opion>
+     <option id="product" value="abayas">Abayas</opion>
+     <option id="product" value="oud">Oud</opion>
+   </select>
+   </label> 
+   <label>How was your experience shopping with us?</label>
+      <label><input name="experience" value="bad" type="radio"/> Bad</label>
+      <label><input name="experience" value="good" type="radio"/> Good</label>
+      <label><input name="experience" value="excellent" type="radio"/> Excellent</label>
+  <label>Would you shop again?</label>
+      <label><input name="again" value="yes" type="radio"/> Yes</label>
+      <label><input name="again" value="no" type="radio"/> No</label>
+<label>What new products would you like to see from us?</label>
+  <label><input value="thobe" type="checkbox"/> Emirati Thobes</label>
+  <label><input value="abayas" type="checkbox"/> Abayas</label>
+  <label><input value="oud" type="checkbox"/> Oud</label>
+<label>What colours would you like to see?</label>
+  <label><input value="maroon" type="checkbox"/> Maroon</label>
+  <label><input value="brown" type="checkbox"/> Brown</label>
+  <label><input value="beige" type="checkbox"/> Beige</label>
+  <label for="comment">
+    Any comments or suggestions? </label>
+    <textarea id="comment" name="comment" rows="5" cols="50">Enter your comment here...</textarea>
+<button id="submit" type="submit">
+  </form>
+</body>
+</html>
